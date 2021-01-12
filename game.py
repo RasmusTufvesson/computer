@@ -1,10 +1,29 @@
 import json
 import pygame
 
-file = open("objects.json", "r")
+objects = json.load(open("objects.json", "r"))
+data = json.load(open("savedata.json", "r"))
 
-stuff = json.load(file)
+def save(data):
+    with open("savedata.json", "w") as write:
+        json.dump(data, write)
 
-file.close()
+##pygame setup
+pygame.init()
+screen = pygame.display.set_mode((800, 600))
+pygame.display.set_caption(objects["game"]["name"])
+clock = pygame.time.Clock()
 
-print (stuff)
+running = True
+while running:
+    for event in pygame.event.get():
+        if event.type==pygame.QUIT:
+            running = False
+    
+    print ('hello')
+
+    pygame.display.update()
+    clock.tick(30)
+
+save(data)
+pygame.quit()

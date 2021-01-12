@@ -1,5 +1,6 @@
 {
-    "yesh": {
-        "woo": "dis is a json!"
+    "game": {
+        "name": "The Computer",
+        "icon": "placeholder.png"
     }
 }
