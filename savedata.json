@@ -1,15 +1,1 @@
-{
-    "computer": {
-        "brokenness": 1
-    },
-    "player": {
-        "cds": {
-            "secret cd": false,
-            "pizza cd": false
-        },
-        "money": 0,
-        "inv": {
-            
-        }
-    }
-}
+{"computer": {"brokenness": 1}, "player": {"cds": {"secret cd": false, "pizza cd": false}, "money": 0, "inv": {}}}
