@@ -1,12 +1,10 @@
-import json
+import save
 import pygame
 
-objects = json.load(open("objects.json", "r"))
-data = json.load(open("savedata.json", "r"))
-
-def save(data):
-    with open("savedata.json", "w") as write:
-        json.dump(data, write)
+objects, data = save.load()
+cds = data["player"]["cds"]
+inv = data["player"]["inv"]
+money = data["player"]["money"]
 
 ##pygame setup
 pygame.init()
@@ -28,5 +26,5 @@ while running:
     pygame.display.update()
     clock.tick(30)
 
-save(data)
+save.save(data)
 pygame.quit()
