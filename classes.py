@@ -39,3 +39,7 @@ class Object:
         self.pos = pos
     def move(self, vector):
         self.pos = self.pos + vector
+    def get_box(self):
+        box = self.image.get_rect()
+        box.center = (self.pos.get()[0]-box.width/2, self.pos.get()[1]-box.height/2)
+        return box
