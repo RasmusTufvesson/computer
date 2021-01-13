@@ -4,7 +4,12 @@ This is a game that is too useless that you can't exit it!
 
 ## Todo
 
-fix so things exist
+Fix so things exist
 
-do some stuff
+Do some stuff
+
+### Mud
+ * pygame for mac do not 
+#### And gud
+ * everything else
 
