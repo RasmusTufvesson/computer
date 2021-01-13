@@ -1,7 +1,6 @@
 {
-    "game": {
-        "name": "The Computer",
-        "icon": "placeholder.png",
-        "music": "song.wav"
-    }
+    "name": "The Computer",
+    "icon": "cd.png",
+    "music": "song.wav",
+    "cd": "cd.png"
 }

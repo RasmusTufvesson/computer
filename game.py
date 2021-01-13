@@ -9,10 +9,10 @@ money = data["player"]["money"]
 ##pygame setup
 pygame.init()
 screen = pygame.display.set_mode((800, 600))
-pygame.display.set_caption(objects["game"]["name"])
+pygame.display.set_caption(objects["name"])
 clock = pygame.time.Clock()
 
-pygame.mixer.music.load(objects["game"]["music"])
+pygame.mixer.music.load(objects["music"])
 pygame.mixer.music.play(-1)
 
 running = True
