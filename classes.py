@@ -34,12 +34,14 @@ class Vector2:
         self = Vector2(self.x / other.x, self.y / other.y)
 
 class Object:
-    def __init__(self, png, pos=Vector2()):
+    def __init__(self, png, name="", pos=Vector2(), on=True):
         self.image = png
         self.pos = pos
+        self.name = name
+        self.on = on
     def move(self, vector):
-        self.pos = self.pos + vector
+        self.pos += vector
     def get_box(self):
         box = self.image.get_rect()
-        box.center = (self.pos.get()[0]-box.width/2, self.pos.get()[1]-box.height/2)
+        box.center = self.pos.get()#(self.pos.get()[0]-box.width/2, self.pos.get()[1]-box.height/2)
         return box

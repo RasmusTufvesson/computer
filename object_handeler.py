@@ -5,8 +5,8 @@ objects, data = save.load()
 
 objs = []
 def new_obj(im, name="", pos=classes.Vector2()):
-    obj = classes.Object(im, pos)
-    objs.append({"obj": obj, "name": name, "on": True})
+    obj = classes.Object(png=im, name=name, pos=pos)
+    objs.append(obj)#{"obj": obj, "name": name, "on": True})
 
 #new_obj(objs, save.get_image(object["cd"]), name="cd")
 
