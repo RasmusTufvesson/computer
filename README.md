@@ -4,7 +4,13 @@ This is a game that is too useless that you can't exit it!
 
 ## Todo
 
-Fix so things exist
+ * art
+ * objects
+ * inventory
+ * typing thing for commands
+ * commands
+ * outside of computer
+ * computer stages
 
 Do some stuff
 
