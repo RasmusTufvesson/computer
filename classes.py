@@ -45,3 +45,9 @@ class Object:
         box = self.image.get_rect()
         box.center = self.pos.get()#(self.pos.get()[0]-box.width/2, self.pos.get()[1]-box.height/2)
         return box
+
+"""
+this is where classes are kept
+
+make new classes in here
+"""

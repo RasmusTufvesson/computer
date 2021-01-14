@@ -34,3 +34,9 @@ def set_on(i, val):
 
 def set_image(i, im):
     objs[i]["obj"].image = im
+
+"""
+this is where the objects list is kept
+
+any functions related to the object list goes here
+"""

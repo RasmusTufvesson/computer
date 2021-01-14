@@ -11,3 +11,7 @@ print (stuff)
 sting = "hej\njag är cool\nokay"
 
 print (sting.split('\n'))
+
+"""
+a place i put stuff so that viggo can look at how you do it
+"""

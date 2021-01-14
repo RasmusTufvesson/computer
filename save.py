@@ -13,3 +13,9 @@ def load():
 
 def get_image(path):
     return image.load(path)
+
+"""
+this is where saving and loading functions are
+
+any save load related functions go here
+"""

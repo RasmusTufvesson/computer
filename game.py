@@ -45,3 +45,9 @@ while running:
 
 save.save(data)
 pygame.quit()
+
+"""
+this is where the mainloop is
+
+any mainloop logic is here
+"""
