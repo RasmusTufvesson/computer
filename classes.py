@@ -11,6 +11,8 @@ class Vector2:
     def __mul__(self, other):
         return Vector2(self.x * other.x, self.y * other.y)
     def __truediv__(self, other):
+        return Vector2(self.x // other.x, self.y // other.y)
+    def __div__(self, other):
         return Vector2(self.x / other.x, self.y / other.y)
     def __lt__(self, other):
         return self.x < other.x and self.y < other.y
@@ -31,6 +33,8 @@ class Vector2:
     def __imul__(self, other):
         self = Vector2(self.x * other.x, self.y * other.y)
     def __itruediv__(self, other):
+        self = Vector2(self.x // other.x, self.y // other.y)
+    def __idiv__(self, other):
         self = Vector2(self.x / other.x, self.y / other.y)
 
 class Object:
